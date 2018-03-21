@@ -1,0 +1,17 @@
+{
+    "name": "axonbits/php",
+    "description": "PHP helper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Rodriguez",
+            "email": "anthonyrodriguez.itt@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4" : {
+            "Axonbits\\" : "src/"
+        }
+    }
+}
