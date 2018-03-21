@@ -9,8 +9,8 @@ A series of helpful components for building rapid PHP applications.
 composer require thonyx/phppods 
 ```
 
-# What to see it in action?
-Run a test! After installing, go --from your PHP project-- to /vendor/axonbits/tests and run: 
+# Want to see it in action?
+Run a test! After installing the package, go --from within your PHP project-- to /vendor/thonyx/phppods/tests and run: 
 
 ```php
 php UndotterTest.php
