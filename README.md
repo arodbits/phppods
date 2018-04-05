@@ -88,3 +88,19 @@ Return the result as as Json
 	'groups.colors.blue'=>'#lalala'
 ]);
 ```
+
+## Filesystem: Create files from a template or stub file
+
+Example: 
+
+```
+\Axonbits\Filesystem::
+    newFile(__DIR__ . '/tmp/SessionClass.php')
+    ->withStub($stubPath = __DIR__ . '/tmp/DummyClass.php', [
+        'DummyClass'     => 'SessionClass',
+        'DummyTimestamp' => '"2018-01-01"',
+        'DummyNamespace' => 'App\\Sessions',
+    ])
+    ->write();
+```
+
