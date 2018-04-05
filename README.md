@@ -2,7 +2,8 @@
 A series of helpful components for building rapid PHP applications. 
 
 # What's available?
-(Currently only) Helpful functions for interacting with arrays in PHP.
+* Array from dot notation
+* Create php files on demand by using a template or a stub file
 
 # How to install?
 ```sh
@@ -10,19 +11,22 @@ composer require thonyx/phppods
 ```
 
 # Want to see it in action?
-Run a test! After installing the package, go --from within your PHP project-- to /vendor/thonyx/phppods/tests and run: 
+Run a test! After installing the package, go to --from within your PHP project-- /vendor/thonyx/phppods and run: 
 
+e.g: Convert an array back from a dot notation
 ```php
-php UndotterTest.php
+composer install && php UndotterTest.php
 ```
 
 # How to use it?
-All available functions --currently just one-- are accessible like follows: 
+All available functions are accessible as follows: 
 
 \Axonbits\ComponentName::functionName();
 
-e.g:
-Transform back into a default array, one with flattened key-value pairs and the "dot" notation.
+
+## Arrray from dot notation
+
+Transform back into a multidimensional array, one with flattened key-value pairs from a "dot" notation.
 
 Before calling the function: 
 
@@ -66,8 +70,6 @@ After calling the function
 ]
 ```
 
-## Arrays
-
 When transforming arrays you can specify the format the function call should return the response: 
 
 --Available: JSON or ARRAY--
@@ -76,7 +78,7 @@ e.g:
 Return the result as as Json
 
 ```php
-\Axonbits\Arrays::**toJson()**->undot[
+\Axonbits\Arrays::toJson()->undot[
 	'name'=>'Yale', 
 	'timeseries.2014.enrollment'=>'1',
 	'timeseries.2014.cost'=>'100',
